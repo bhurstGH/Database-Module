@@ -23,7 +23,13 @@ A: SQL is specifically designed for querying databases and is declarative. It ca
 
 >In your own words, explain how the pieces of a database system fit together at a high level.
 
-A: A database is a collection of columns and rows of related data. Each column contains a certain type of data and the rows (or records) are a collection of column data that represents an object or entity, such as a person, order, or item information.
+A: A database is an application that forms relationships between tables and the data within them in a binary file format. Data is any piece of information that we need to store or manipulate and access at a later time, particularly outside of a program's runtime. The data in each table column should share a type (such as text or integer) and the data in the columns form rows or records that have a relationship.
+
+Using the SQL language, the database application or outside sources (such as a program you are writing, or perhaps a web API so others can access your database) can request the data from the tables. SQL allows you to conditionally retrieve and display data from one or more tables as well as make changes (updates or deletions, for example) as needed.
+
+Databases and SQL provide a paradoxical combination of data stored in a non-human readable format that can be retrieved in a very declarative, human readable way, very quickly.
+
+_old answer_ A database is a collection of columns and rows of related data. Each column contains a certain type of data and the rows (or records) are a collection of column data that represents an object or entity, such as a person, order, or item information.
 
 >Explain the meaning of table, row, column, and value.
 
